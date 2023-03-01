@@ -1,6 +1,6 @@
 def getVaScript():
     va_script = {
-      "Action__start":{
+      "Action__000":{
           "_agent_position":{
               "en-US":"In Init block of VA-box",
               "ru-RU":"В блоке Init VA-box"
@@ -8,45 +8,39 @@ def getVaScript():
           "_action_description":{
               "_010":"--> init action"
           },
-          "Direction_green":"Action__add_to_sum",  "_010":" > 0)",
-          "Direction_blue":"Action__do_nothing",  "_010":" <= 0",
-          "Direction_red":"Action_9000",  "_010":"The end of array"
+          "Direction_10":"Action__010",  "_010":"ok",
+          
       },
-      "Action__add_to_sum":{
+      "Action__010":{
           "_agent_position":{
-              "en-US":"The v-agent is adding current element of array to the sum_01",
-              "ru-RU":"v-agent добавляет текущий элемент массива к sum_01"
+              "en-US":"The v-agent is adding 1 to sum_01",
+              "ru-RU":"v-agent добавляет 1 sum_01"
           },
           "_action_description":{
               "_010":"empty"
           },
-          "Direction_green":"Action__add_to_sum",  "_010":" > 0)",
-          "Direction_blue":"Action__do_nothing",  "_010":" <= 0",
-          "Direction_red":"Action_9000",  "_010":"The end of array"
+          "Direction_10":"Action__020",  "_010":"go to check",
       },
-      "Action__do_nothing":{
+      "Action__020":{
           "_agent_position":{
-              "en-US":"The v-agent is skipping the current element of array",
-              "ru-RU":"v-agent пропускает текущий элемент массива"
+              "en-US":"The v-agent checks if sum_01 is greater than sum_01_max",
+              "ru-RU":"v-agent проверяет если sum_01 больше sum_01_max"
           },
           "_action_description":{
               "_010":"empty"
           },
-          "Direction_green":"Action__add_to_sum",  "_010":" > 0)",
-          "Direction_blue":"Action__do_nothing",  "_010":" <= 0",
-          "Direction_red":"Action_9000",  "_010":"The end of array"
+          "Direction_10":"Action__010",  "_010":"sum_01 < sum_01_max",
+          "Direction_20":"Action_9000",  "_010":"end"
       },   
-      "Action_9000":{
+      "Action__9000":{
           "_agent_position":{
-              "en-US":"The v-agent found the end of array",
-              "ru-RU":"v-agent нашел конец массива"
+              "en-US":"",
+              "ru-RU":""
           },
           "_action_description":{
               "_010":"empty"
           },
-          "Direction_green":"Action_END",  "_010":" > 0",
-          "Direction_blue":"Action_END",  "_010":" <= 0",
-          "Direction_red":"Action_END",  "_010":"The end of array"
+          "Direction_10":"Action_END",  "_010":"Final action / The end"
       }
     }
 

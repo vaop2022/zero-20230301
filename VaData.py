@@ -21,13 +21,15 @@ class VaData():
             self.va_data[temp[1]][0] = value
             self.va_data[temp[1]][1] = temp[0]
         if temp[1] not in self.va_data:
-            sys.exit('Error: Attempt to set undefined variable')
+            temp = 'va_data set error: Attempt to set undefined variable:[' + str(key) + ']'
+            sys.exit(temp)
 
     def get(self, key):
         temp = []
         temp = key.split('...')
         if temp[1] not in self.va_data:
-            sys.exit('Error: Attempt to get undefined variable [' + key + ']')
+            temp = 'va_data get error:: Attempt to get undefined variable [' + str(key) + ']'
+            sys.exit(temp)
 
         return self.va_data[temp[1]][0]
 
