@@ -1,5 +1,5 @@
 import VaBox
-import VaActions
+import Actions
 import VaScript
 import VaConfig
 import VaConfigLocal
