@@ -30,9 +30,9 @@ def getVaScript():
               "_010":"empty"
           },
           "Direction_10":"Action__010",  "_010":"sum_01 < sum_01_max",
-          "Direction_20":"Action_9000",  "_010":"end"
+          "Direction_20":"Action__finish_1",  "_010":"end"
       },   
-      "Action__9000":{
+      "Action__finish_1":{
           "_agent_position":{
               "en-US":"",
               "ru-RU":""
