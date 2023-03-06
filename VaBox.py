@@ -1,14 +1,9 @@
-from  Action__000  import *
-from  Action__010  import *
-from  Action__020  import *
-from  Action__finish_1  import *
-
-
+from Actions import Action__init
 
 def start(va_data, app_data):
 
-    Action__000(va_data, app_data)
-  
+    Action__init.Action__init(va_data, app_data)
+    
     while 1 == 1: 
         va_data.set('Number of jumps...jump', va_data.get('Number of jumps...jump') + 1)
         if va_data.get('Number of jumps...jump') > va_data.get('Max number of jumps...max_jump'):
