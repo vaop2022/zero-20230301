@@ -1,4 +1,4 @@
-def Action__increase_index(va_data, app_data):
+def Action__if_end_of_arr(va_data, app_data):
 
     current_index = app_data.get('Индекс...i')
     arr = app_data.get('Входящий массив...Arr')

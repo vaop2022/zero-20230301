@@ -1,4 +1,4 @@
-def Action__init(va_data, app_data):
+def Action__increase_sum(va_data, app_data):
 
     temp_sum = app_data.get('Сумма...Sum')
     current_index = app_data.get('Индекс...i')

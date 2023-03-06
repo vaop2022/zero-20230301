@@ -1,8 +1,12 @@
-from Actions import Action__init
+from  Action__finish  import *
+from  Action__if_end_of_arr  import *
+from  Action__increase_index  import *
+from  Action__increase_sum  import *
+from  Action__init  import *
 
 def start(va_data, app_data):
 
-    Action__init.Action__init(va_data, app_data)
+    Action__init(va_data, app_data)
     
     while 1 == 1: 
         va_data.set('Number of jumps...jump', va_data.get('Number of jumps...jump') + 1)
