@@ -16,7 +16,7 @@ VaConfig.setup(va_data) # инициализатор объекта класса
 app_data = VaData() # отвечает за данные приложения, работающего на va-engine
 VaConfigLocal.setup(app_data) # инициализатор объекта класса VaData
 
-app_data.set('Входящий массив...Arr', [2,14,5])
+app_data.set('Входящий массив...Arr', [1, 1, -1])
 
 app_data.printNameValue('Входящий массив...Arr')
 

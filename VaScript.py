@@ -4,7 +4,15 @@ def getVaScript():
         "_action_description":{
               "description_1":"Set initial app_data"
           },
-          "Direction_forward":"Action__increase_sum",  "Description of Direction_forward":"Go streight forward"
+          "Direction_forward":"Action__if_positive",  "Description of Direction_forward":"Go streight forward"
+          
+      },
+      "Action__if_positive":{
+          "_action_description":{
+              "description_1":"Check if element of arr positive"
+          },
+          "Direction_positive":"Action__increase_sum",  "Description of Direction_positive":"element of arr positive",
+          "Direction_not_positive":"Action__increase_index",  "Description of Direction_forward":"element of arr not positive"
           
       },
       "Action__increase_sum":{
@@ -25,7 +33,7 @@ def getVaScript():
           "_action_description":{
               "description_1":"if end of arr"
           },
-          "Direction_loop_back":"Action__increase_sum",  "Description of Direction_loop_back":"not end of arr",
+          "Direction_loop_back":"Action__if_positive",  "Description of Direction_loop_back":"not end of arr",
           "Direction_finish":"Action__finish",  "Description of Direction_finish":"ok"
       },
       "Action__finish":{
